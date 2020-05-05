@@ -1,6 +1,10 @@
 .DS_Store
 *.swp
 *.swo
-.idea/*
-
-
+.idea/
+notdrowning/.idea/
+env.txt
+venv/
+*.pyc
+notdrowning/madewaves
+*/__pycache/

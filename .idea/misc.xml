@@ -4,8 +4,4 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5.0 (/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5)" project-jdk-type="Python SDK" />
-  <component name="VagrantProjectSettings">
-    <option name="instanceFolder" value="$PROJECT_DIR$/../../demos/police/get_user_info" />
-    <option name="provider" value="" />
-  </component>
 </project>
