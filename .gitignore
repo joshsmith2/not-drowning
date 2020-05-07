@@ -7,5 +7,7 @@ env.txt
 venv/
 *.pyc
 notdrowning/madewaves
+notdrowning/static/
 */__pycache/
 notdrowning/uwsgi.ini
+
