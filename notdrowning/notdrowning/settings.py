@@ -26,7 +26,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['178.62.49.229']
+ALLOWED_HOSTS = ['178.62.49.229',
+                 '127.0.0.1',
+                 'localhost']
 
 
 # Application definition
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'notdrowning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'wavemaker/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
