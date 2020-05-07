@@ -8,3 +8,4 @@ venv/
 *.pyc
 notdrowning/madewaves
 */__pycache/
+notdrowning/uwsgi.ini

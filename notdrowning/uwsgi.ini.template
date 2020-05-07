@@ -1,0 +1,28 @@
+# mysite_uwsgi.ini file
+[uwsgi]
+
+uid = www-data
+gid = www-data
+
+# Django-related settings
+# the base directory (full path)
+chdir           = /var/www/not-drowning/notdrowning
+# Django's wsgi file
+module          = notdrowning.wsgi
+# the virtualenv (full path)
+home            = /var/www/not-drowning/venv 
+# Secret key for Django
+env		=DJANGO_SECRET_KEY=ro1a@xkpb9-4#kcqmcwihc+864*)+zs52dq+p-(s8p=g98y-6s
+
+
+# process-related settings
+# master
+master          = true
+# maximum number of worker processes
+processes       = 10
+# the socket (use the full path to be safe
+socket          = /var/www/not-drowning/notdrowning/notdrowning.sock
+# ... with appropriate permissions - may be needed
+# chmod-socket    = 664
+# clear environment on exit
+vacuum          = true
