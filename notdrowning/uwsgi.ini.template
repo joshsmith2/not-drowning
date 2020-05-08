@@ -12,7 +12,7 @@ module          = notdrowning.wsgi
 # the virtualenv (full path)
 home            = /var/www/not-drowning/venv 
 # Secret key for Django
-env		=DJANGO_SECRET_KEY=ro1a@xkpb9-4#kcqmcwihc+864*)+zs52dq+p-(s8p=g98y-6s
+env		=DJANGO_SECRET_KEY=yoursecretkey
 
 
 # process-related settings
