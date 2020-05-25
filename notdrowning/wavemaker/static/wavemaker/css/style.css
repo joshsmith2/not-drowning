@@ -1,6 +1,25 @@
-h1 {
-    text-transform: uppercase;
-    margin-top: 0px;
-    font-size: 14.3vw;
+body{
     font-family: 'Jost', sans-serif;
 }
+
+h1 {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 14.3vw;
+}
+
+.new-wave {
+    color: #ffffff;
+    background-color: #228;
+    padding: 20px;
+    width: 254px;
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+
+select, input, label {
+    font-size: 1em;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+

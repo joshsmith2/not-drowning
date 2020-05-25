@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from wavemaker.models import Wave
 
 from .forms import WaveForm
 
@@ -13,6 +11,12 @@ def index(request):
             ripple = form.save()
             print(ripple.frequency)
     else:
-        form = WaveForm()
+        initial_dict = {
+            'shape': 'SQU',
+            'frequency': 400,
+            'bitrate': 40000
+        }
+
+        form = WaveForm(initial=initial_dict)
 
     return render(request, 'wavemaker/index.html', {'form': form})

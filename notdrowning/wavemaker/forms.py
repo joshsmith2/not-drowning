@@ -8,4 +8,4 @@ class WaveForm(ModelForm):
     """
     class Meta:
         model = Wave
-        fields = ['frequency', 'shape', 'bitrate']
+        fields = ['shape', 'frequency', 'bitrate']
