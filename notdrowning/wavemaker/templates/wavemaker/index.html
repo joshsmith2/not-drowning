@@ -10,9 +10,12 @@
 </head>
 <body>
     <h1>Pygmalitron</h1>
-    <h1>BANG HAMLET</h1>
-    <h1>MUNCIE</h1>
-    <h1>AND</h1>
-    <h1>THE BRINE</h1>
+    <div class="wave">
+        <form action="/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>

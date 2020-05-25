@@ -3,7 +3,7 @@ from django.db import models
 
 class Wave(models.Model):
     # TODO: Sensible maxes and mins: 20 to 2K
-    frequency = models.DecimalField(max_digits=5, decimal_places=3)
+    frequency = models.DecimalField(max_digits=8, decimal_places=3)
     bitrate = models.PositiveIntegerField()
 
     SINE = "SIN"
@@ -23,4 +23,4 @@ class Wave(models.Model):
 
     # Other model logic - see https://www.digitalocean.com/community/tutorials/how-to-create-django-models
     class Meta:
-        ordering = ['frequency','shape', 'bitrate']
+        ordering = ['frequency', 'shape', 'bitrate']
